@@ -1,0 +1,1693 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/d45957d307d6fbeba266d572/w/bd9f549c3008356ba09feb92/e/47fc9c88b37be00f7acb3002 -->
+<robot name="my-robot">
+  <!-- Link front_panel -->
+  <link name="front_panel">
+    <inertial>
+      <origin xyz="5.38804e-07 0.137822 0.00392853" rpy="0 0 0"/>
+      <mass value="2.11436"/>
+      <inertia ixx="0.0268936" ixy="8.14474e-06" ixz="4.80392e-07" iyy="0.0159621" iyz="-0.000408514" izz="0.0215141"/>
+    </inertial>
+    <!-- Part top_left_panel -->
+    <visual>
+      <origin xyz="0 0 -1.38778e-17" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/top_left_panel.stl"/>
+      </geometry>
+      <material name="top_left_panel_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -1.38778e-17" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/top_left_panel.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part top_right_panel -->
+    <visual>
+      <origin xyz="1.38778e-17 0 1.38778e-17" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/top_right_panel.stl"/>
+      </geometry>
+      <material name="top_right_panel_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.38778e-17 0 1.38778e-17" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/top_right_panel.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part front_panel -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/front_panel.stl"/>
+      </geometry>
+      <material name="front_panel_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/front_panel.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_housing_connector -->
+    <visual>
+      <origin xyz="0.0505 0.121693 -0.00780285" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_housing_connector.stl"/>
+      </geometry>
+      <material name="servo_housing_connector_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0505 0.121693 -0.00780285" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_housing_connector.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part bottom_frame -->
+    <visual>
+      <origin xyz="0 0.0931549 -0.132536" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/bottom_frame.stl"/>
+      </geometry>
+      <material name="bottom_frame_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.0931549 -0.132536" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/bottom_frame.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part battery_holder -->
+    <visual>
+      <origin xyz="0 0.10869 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/battery_holder.stl"/>
+      </geometry>
+      <material name="battery_holder_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.10869 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/battery_holder.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_holder_right -->
+    <visual>
+      <origin xyz="0.0505 0.121693 -0.00780285" rpy="0 -0 4.93038e-32"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_right.stl"/>
+      </geometry>
+      <material name="servo_holder_right_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0505 0.121693 -0.00780285" rpy="0 -0 4.93038e-32"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_right.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part top_servo_housing -->
+    <visual>
+      <origin xyz="0.0505 0.121693 -0.00780285" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/top_servo_housing.stl"/>
+      </geometry>
+      <material name="top_servo_housing_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0505 0.121693 -0.00780285" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/top_servo_housing.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_holder_left -->
+    <visual>
+      <origin xyz="0.0505 0.121693 -0.00780285" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_left.stl"/>
+      </geometry>
+      <material name="servo_holder_left_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0505 0.121693 -0.00780285" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_left.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part back_middle_connector_panel -->
+    <visual>
+      <origin xyz="0 0.10869 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/back_middle_connector_panel.stl"/>
+      </geometry>
+      <material name="back_middle_connector_panel_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.10869 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/back_middle_connector_panel.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part intelrealsense_d435_multibody -->
+    <visual>
+      <origin xyz="8.31354e-18 -0.00242253 0.0378849" rpy="1.8326 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/intelrealsense_d435_multibody.stl"/>
+      </geometry>
+      <material name="intelrealsense_d435_multibody_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="8.31354e-18 -0.00242253 0.0378849" rpy="1.8326 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/intelrealsense_d435_multibody.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant4 -->
+    <visual>
+      <origin xyz="-0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+      <material name="composant4_material">
+        <color rgba="0.952941 0.796078 0.486275 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1 -->
+    <visual>
+      <origin xyz="-0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+      <material name="vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1_material">
+        <color rgba="0.796078 0.796078 0.796078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis -->
+    <visual>
+      <origin xyz="-0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+      <material name="vis_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant3 -->
+    <visual>
+      <origin xyz="-0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+      <material name="composant3_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_1 -->
+    <visual>
+      <origin xyz="-0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+      <material name="vis_1_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant2 -->
+    <visual>
+      <origin xyz="-0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+      <material name="composant2_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_motor_sts3215_v10 -->
+    <visual>
+      <origin xyz="-0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+      <material name="servo_motor_sts3215_v10_material">
+        <color rgba="0.247059 0.247059 0.247059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant4_2 -->
+    <visual>
+      <origin xyz="0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+      <material name="composant4_2_material">
+        <color rgba="0.952941 0.796078 0.486275 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1_2 -->
+    <visual>
+      <origin xyz="0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+      <material name="vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1_2_material">
+        <color rgba="0.796078 0.796078 0.796078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_2 -->
+    <visual>
+      <origin xyz="0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+      <material name="vis_2_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant3_2 -->
+    <visual>
+      <origin xyz="0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+      <material name="composant3_2_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_1_2 -->
+    <visual>
+      <origin xyz="0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+      <material name="vis_1_2_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant2_2 -->
+    <visual>
+      <origin xyz="0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+      <material name="composant2_2_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_motor_sts3215_v10_2 -->
+    <visual>
+      <origin xyz="0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+      <material name="servo_motor_sts3215_v10_2_material">
+        <color rgba="0.247059 0.247059 0.247059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0505 0.109426 -0.00780285" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link servo_holder_1 -->
+  <link name="servo_holder_1">
+    <inertial>
+      <origin xyz="0.000579635 -1.8372e-05 -0.0271009" rpy="0 0 0"/>
+      <mass value="0.0493776"/>
+      <inertia ixx="1.33434e-05" ixy="-5.36033e-10" ixz="2.26521e-07" iyy="1.60993e-05" iyz="2.33279e-08" izz="8.54377e-06"/>
+    </inertial>
+    <!-- Part servo_holder_1 -->
+    <visual>
+      <origin xyz="0 0 -0.003" rpy="0 -0 1.80228e-52"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_1.stl"/>
+      </geometry>
+      <material name="servo_holder_1_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.003" rpy="0 -0 1.80228e-52"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant4_3 -->
+    <visual>
+      <origin xyz="-1.38778e-17 0 -0.0307" rpy="-1.19758e-48 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+      <material name="composant4_3_material">
+        <color rgba="0.952941 0.796078 0.486275 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.38778e-17 0 -0.0307" rpy="-1.19758e-48 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1_3 -->
+    <visual>
+      <origin xyz="-1.38778e-17 0 -0.0307" rpy="-1.19758e-48 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+      <material name="vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1_3_material">
+        <color rgba="0.796078 0.796078 0.796078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.38778e-17 0 -0.0307" rpy="-1.19758e-48 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_3 -->
+    <visual>
+      <origin xyz="-1.38778e-17 0 -0.0307" rpy="-1.19758e-48 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+      <material name="vis_3_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.38778e-17 0 -0.0307" rpy="-1.19758e-48 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant3_3 -->
+    <visual>
+      <origin xyz="-1.38778e-17 0 -0.0307" rpy="-1.19758e-48 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+      <material name="composant3_3_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.38778e-17 0 -0.0307" rpy="-1.19758e-48 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_1_3 -->
+    <visual>
+      <origin xyz="-1.38778e-17 0 -0.0307" rpy="-1.19758e-48 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+      <material name="vis_1_3_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.38778e-17 0 -0.0307" rpy="-1.19758e-48 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant2_3 -->
+    <visual>
+      <origin xyz="-1.38778e-17 0 -0.0307" rpy="-1.19758e-48 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+      <material name="composant2_3_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.38778e-17 0 -0.0307" rpy="-1.19758e-48 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_motor_sts3215_v10_3 -->
+    <visual>
+      <origin xyz="-1.38778e-17 0 -0.0307" rpy="-1.19758e-48 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+      <material name="servo_motor_sts3215_v10_3_material">
+        <color rgba="0.247059 0.247059 0.247059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.38778e-17 0 -0.0307" rpy="-1.19758e-48 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link servo_holder_2_left -->
+  <link name="servo_holder_2_left">
+    <inertial>
+      <origin xyz="0.0580813 -0.000684249 0.0163595" rpy="0 0 0"/>
+      <mass value="0.102592"/>
+      <inertia ixx="4.1094e-05" ixy="-1.77793e-06" ixz="2.83518e-06" iyy="7.91882e-05" iyz="2.87726e-07" izz="5.09334e-05"/>
+    </inertial>
+    <!-- Part servo_holder_2_left -->
+    <visual>
+      <origin xyz="0 0.0182 0.0182" rpy="-1.5708 -1.80228e-52 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_2_left.stl"/>
+      </geometry>
+      <material name="servo_holder_2_left_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.0182 0.0182" rpy="-1.5708 -1.80228e-52 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_2_left.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant4_4 -->
+    <visual>
+      <origin xyz="0.0689457 1.38778e-17 0.00149936" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+      <material name="composant4_4_material">
+        <color rgba="0.952941 0.796078 0.486275 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0689457 1.38778e-17 0.00149936" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1_4 -->
+    <visual>
+      <origin xyz="0.0689457 1.38778e-17 0.00149936" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+      <material name="vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1_4_material">
+        <color rgba="0.796078 0.796078 0.796078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0689457 1.38778e-17 0.00149936" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_4 -->
+    <visual>
+      <origin xyz="0.0689457 1.38778e-17 0.00149936" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+      <material name="vis_4_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0689457 1.38778e-17 0.00149936" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant3_4 -->
+    <visual>
+      <origin xyz="0.0689457 1.38778e-17 0.00149936" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+      <material name="composant3_4_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0689457 1.38778e-17 0.00149936" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_1_4 -->
+    <visual>
+      <origin xyz="0.0689457 1.38778e-17 0.00149936" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+      <material name="vis_1_4_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0689457 1.38778e-17 0.00149936" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant2_4 -->
+    <visual>
+      <origin xyz="0.0689457 1.38778e-17 0.00149936" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+      <material name="composant2_4_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0689457 1.38778e-17 0.00149936" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_motor_sts3215_v10_4 -->
+    <visual>
+      <origin xyz="0.0689457 1.38778e-17 0.00149936" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+      <material name="servo_motor_sts3215_v10_4_material">
+        <color rgba="0.247059 0.247059 0.247059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0689457 1.38778e-17 0.00149936" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link servo_holder_3_left -->
+  <link name="servo_holder_3_left">
+    <inertial>
+      <origin xyz="0.0267296 0.0112713 0.00428749" rpy="0 0 0"/>
+      <mass value="0.19139"/>
+      <inertia ixx="0.000183612" ixy="8.65452e-05" ixz="-2.98109e-05" iyy="0.000536696" iyz="1.59908e-05" izz="0.000608291"/>
+    </inertial>
+    <!-- Part servo_shield_left -->
+    <visual>
+      <origin xyz="-1.38778e-17 2.77556e-17 0" rpy="3.14159 1.20371e-35 1.9082e-54"/>
+      <geometry>
+        <mesh filename="package://assets/servo_shield_left.stl"/>
+      </geometry>
+      <material name="servo_shield_left_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.38778e-17 2.77556e-17 0" rpy="3.14159 1.20371e-35 1.9082e-54"/>
+      <geometry>
+        <mesh filename="package://assets/servo_shield_left.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_holder_3_left -->
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_3_left.stl"/>
+      </geometry>
+      <material name="servo_holder_3_left_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_3_left.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant4_5 -->
+    <visual>
+      <origin xyz="0.0732925 0 0.0178756" rpy="2.40741e-35 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+      <material name="composant4_5_material">
+        <color rgba="0.952941 0.796078 0.486275 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 0 0.0178756" rpy="2.40741e-35 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1_5 -->
+    <visual>
+      <origin xyz="0.0732925 0 0.0178756" rpy="2.40741e-35 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+      <material name="vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1_5_material">
+        <color rgba="0.796078 0.796078 0.796078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 0 0.0178756" rpy="2.40741e-35 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_5 -->
+    <visual>
+      <origin xyz="0.0732925 0 0.0178756" rpy="2.40741e-35 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+      <material name="vis_5_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 0 0.0178756" rpy="2.40741e-35 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant3_5 -->
+    <visual>
+      <origin xyz="0.0732925 0 0.0178756" rpy="2.40741e-35 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+      <material name="composant3_5_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 0 0.0178756" rpy="2.40741e-35 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_1_5 -->
+    <visual>
+      <origin xyz="0.0732925 0 0.0178756" rpy="2.40741e-35 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+      <material name="vis_1_5_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 0 0.0178756" rpy="2.40741e-35 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant2_5 -->
+    <visual>
+      <origin xyz="0.0732925 0 0.0178756" rpy="2.40741e-35 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+      <material name="composant2_5_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 0 0.0178756" rpy="2.40741e-35 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_motor_sts3215_v10_5 -->
+    <visual>
+      <origin xyz="0.0732925 0 0.0178756" rpy="2.40741e-35 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+      <material name="servo_motor_sts3215_v10_5_material">
+        <color rgba="0.247059 0.247059 0.247059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 0 0.0178756" rpy="2.40741e-35 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link servo_holder_4 -->
+  <link name="servo_holder_4">
+    <inertial>
+      <origin xyz="0.0568324 -1.23844e-08 0.0184417" rpy="0 0 0"/>
+      <mass value="0.0685705"/>
+      <inertia ixx="1.76251e-05" ixy="1.73396e-11" ixz="-3.72672e-07" iyy="5.60759e-05" iyz="-1.06476e-11" izz="4.51319e-05"/>
+    </inertial>
+    <!-- Part servo_holder_4 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="-3.14159 2.73691e-47 2.60541e-65"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_4.stl"/>
+      </geometry>
+      <material name="servo_holder_4_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-3.14159 2.73691e-47 2.60541e-65"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant4_6 -->
+    <visual>
+      <origin xyz="0.0732925 0 0.0178756" rpy="-1.31228e-30 -7.65581e-31 -6.13909e-17"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+      <material name="composant4_6_material">
+        <color rgba="0.952941 0.796078 0.486275 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 0 0.0178756" rpy="-1.31228e-30 -7.65581e-31 -6.13909e-17"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1_6 -->
+    <visual>
+      <origin xyz="0.0732925 0 0.0178756" rpy="-1.31228e-30 -7.65581e-31 -6.13909e-17"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+      <material name="vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1_6_material">
+        <color rgba="0.796078 0.796078 0.796078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 0 0.0178756" rpy="-1.31228e-30 -7.65581e-31 -6.13909e-17"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_6 -->
+    <visual>
+      <origin xyz="0.0732925 0 0.0178756" rpy="-1.31228e-30 -7.65581e-31 -6.13909e-17"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+      <material name="vis_6_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 0 0.0178756" rpy="-1.31228e-30 -7.65581e-31 -6.13909e-17"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant3_6 -->
+    <visual>
+      <origin xyz="0.0732925 0 0.0178756" rpy="-1.31228e-30 -7.65581e-31 -6.13909e-17"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+      <material name="composant3_6_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 0 0.0178756" rpy="-1.31228e-30 -7.65581e-31 -6.13909e-17"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_1_6 -->
+    <visual>
+      <origin xyz="0.0732925 0 0.0178756" rpy="-1.31228e-30 -7.65581e-31 -6.13909e-17"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+      <material name="vis_1_6_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 0 0.0178756" rpy="-1.31228e-30 -7.65581e-31 -6.13909e-17"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant2_6 -->
+    <visual>
+      <origin xyz="0.0732925 0 0.0178756" rpy="-1.31228e-30 -7.65581e-31 -6.13909e-17"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+      <material name="composant2_6_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 0 0.0178756" rpy="-1.31228e-30 -7.65581e-31 -6.13909e-17"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_motor_sts3215_v10_6 -->
+    <visual>
+      <origin xyz="0.0732925 0 0.0178756" rpy="-1.31228e-30 -7.65581e-31 -6.13909e-17"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+      <material name="servo_motor_sts3215_v10_6_material">
+        <color rgba="0.247059 0.247059 0.247059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 0 0.0178756" rpy="-1.31228e-30 -7.65581e-31 -6.13909e-17"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link cushion_left -->
+  <link name="cushion_left">
+    <inertial>
+      <origin xyz="-0.0194706 0.0420367 0.0158895" rpy="0 0 0"/>
+      <mass value="0.191143"/>
+      <inertia ixx="6.6193e-05" ixy="3.74292e-06" ixz="-1.39334e-06" iyy="0.000224241" iyz="-9.58455e-06" izz="0.00023826"/>
+    </inertial>
+    <!-- Part foot_left -->
+    <visual>
+      <origin xyz="0 0.0516163 0.0390687" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/foot_left.stl"/>
+      </geometry>
+      <material name="foot_left_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.0516163 0.0390687" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/foot_left.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part cushion_left -->
+    <visual>
+      <origin xyz="0 0.0516163 0.0390687" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/cushion_left.stl"/>
+      </geometry>
+      <material name="cushion_left_material">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.0516163 0.0390687" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/cushion_left.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from servo_holder_4 to cushion_left -->
+  <joint name="joint_5_left" type="revolute">
+    <origin xyz="0.0857925 0 0.0365756" rpy="3.14159 1.31228e-30 1.5708"/>
+    <parent link="servo_holder_4"/>
+    <child link="cushion_left"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
+  </joint>
+  <!-- Joint from servo_holder_3_left to servo_holder_4 -->
+  <joint name="joint_4_left" type="revolute">
+    <origin xyz="0.0857925 0 0.0365756" rpy="-3.14159 -9.52697e-31 -1.51028e-49"/>
+    <parent link="servo_holder_3_left"/>
+    <child link="servo_holder_4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.13446" upper="0.558505"/>
+  </joint>
+  <!-- Joint from servo_holder_2_left to servo_holder_3_left -->
+  <joint name="joint_3_left" type="revolute">
+    <origin xyz="0.0866457 1.38778e-17 -0.0110006" rpy="1.5708 1.58527e-19 -1.5708"/>
+    <parent link="servo_holder_2_left"/>
+    <child link="servo_holder_3_left"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.14159" upper="0.349066"/>
+  </joint>
+  <!-- Joint from servo_holder_1 to servo_holder_2_left -->
+  <joint name="joint_2_left" type="revolute">
+    <origin xyz="0.0187 0 -0.0432" rpy="1.5708 -0 -1.5708"/>
+    <parent link="servo_holder_1"/>
+    <child link="servo_holder_2_left"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.698132" upper="0.785398"/>
+  </joint>
+  <!-- Joint from front_panel to servo_holder_1 -->
+  <joint name="joint_1_left" type="revolute">
+    <origin xyz="0.0505 0.0969262 -0.0255029" rpy="-3.02761e-17 1.58527e-19 1.5708"/>
+    <parent link="front_panel"/>
+    <child link="servo_holder_1"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.349066" upper="0.349066"/>
+  </joint>
+  <!-- Link servo_holder_1_2 -->
+  <link name="servo_holder_1_2">
+    <inertial>
+      <origin xyz="-0.000456244 -1.83429e-05 -0.0271009" rpy="0 0 0"/>
+      <mass value="0.0493776"/>
+      <inertia ixx="1.33434e-05" ixy="4.03024e-10" ixz="-3.15573e-07" iyy="1.61056e-05" iyz="2.33556e-08" izz="8.55008e-06"/>
+    </inertial>
+    <!-- Part servo_holder_1_2 -->
+    <visual>
+      <origin xyz="0 0 -0.003" rpy="0 -0 1.94261e-48"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_1.stl"/>
+      </geometry>
+      <material name="servo_holder_1_2_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.003" rpy="0 -0 1.94261e-48"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant4_7 -->
+    <visual>
+      <origin xyz="0 0 -0.0307" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+      <material name="composant4_7_material">
+        <color rgba="0.952941 0.796078 0.486275 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0307" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1_7 -->
+    <visual>
+      <origin xyz="0 0 -0.0307" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+      <material name="vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1_7_material">
+        <color rgba="0.796078 0.796078 0.796078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0307" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_7 -->
+    <visual>
+      <origin xyz="0 0 -0.0307" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+      <material name="vis_7_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0307" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant3_7 -->
+    <visual>
+      <origin xyz="0 0 -0.0307" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+      <material name="composant3_7_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0307" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_1_7 -->
+    <visual>
+      <origin xyz="0 0 -0.0307" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+      <material name="vis_1_7_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0307" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant2_7 -->
+    <visual>
+      <origin xyz="0 0 -0.0307" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+      <material name="composant2_7_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0307" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_motor_sts3215_v10_7 -->
+    <visual>
+      <origin xyz="0 0 -0.0307" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+      <material name="servo_motor_sts3215_v10_7_material">
+        <color rgba="0.247059 0.247059 0.247059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0307" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link servo_holder_2_right -->
+  <link name="servo_holder_2_right">
+    <inertial>
+      <origin xyz="-0.0579795 -0.000696507 0.0162624" rpy="0 0 0"/>
+      <mass value="0.103289"/>
+      <inertia ixx="4.12917e-05" ixy="1.79684e-06" ixz="-2.68334e-06" iyy="7.95052e-05" iyz="2.69597e-07" izz="5.11299e-05"/>
+    </inertial>
+    <!-- Part servo_holder_2_right -->
+    <visual>
+      <origin xyz="0.100812 0.0182 0.0129527" rpy="-1.5708 0.104008 6.19646e-33"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_2_right.stl"/>
+      </geometry>
+      <material name="servo_holder_2_right_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.100812 0.0182 0.0129527" rpy="-1.5708 0.104008 6.19646e-33"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_2_right.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant4_8 -->
+    <visual>
+      <origin xyz="-0.0689457 -1.38778e-16 0.00149936" rpy="-6.39169e-18 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+      <material name="composant4_8_material">
+        <color rgba="0.952941 0.796078 0.486275 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0689457 -1.38778e-16 0.00149936" rpy="-6.39169e-18 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1_8 -->
+    <visual>
+      <origin xyz="-0.0689457 -1.38778e-16 0.00149936" rpy="-6.39169e-18 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+      <material name="vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1_8_material">
+        <color rgba="0.796078 0.796078 0.796078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0689457 -1.38778e-16 0.00149936" rpy="-6.39169e-18 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_8 -->
+    <visual>
+      <origin xyz="-0.0689457 -1.38778e-16 0.00149936" rpy="-6.39169e-18 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+      <material name="vis_8_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0689457 -1.38778e-16 0.00149936" rpy="-6.39169e-18 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant3_8 -->
+    <visual>
+      <origin xyz="-0.0689457 -1.38778e-16 0.00149936" rpy="-6.39169e-18 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+      <material name="composant3_8_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0689457 -1.38778e-16 0.00149936" rpy="-6.39169e-18 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_1_8 -->
+    <visual>
+      <origin xyz="-0.0689457 -1.38778e-16 0.00149936" rpy="-6.39169e-18 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+      <material name="vis_1_8_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0689457 -1.38778e-16 0.00149936" rpy="-6.39169e-18 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant2_8 -->
+    <visual>
+      <origin xyz="-0.0689457 -1.38778e-16 0.00149936" rpy="-6.39169e-18 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+      <material name="composant2_8_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0689457 -1.38778e-16 0.00149936" rpy="-6.39169e-18 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_motor_sts3215_v10_8 -->
+    <visual>
+      <origin xyz="-0.0689457 -1.38778e-16 0.00149936" rpy="-6.39169e-18 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+      <material name="servo_motor_sts3215_v10_8_material">
+        <color rgba="0.247059 0.247059 0.247059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0689457 -1.38778e-16 0.00149936" rpy="-6.39169e-18 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link servo_holder_3_right -->
+  <link name="servo_holder_3_right">
+    <inertial>
+      <origin xyz="0.0267598 -0.0111946 0.00428741" rpy="0 0 0"/>
+      <mass value="0.19139"/>
+      <inertia ixx="0.000184101" ixy="-8.75426e-05" ixz="-2.97666e-05" iyy="0.000536224" iyz="-1.61578e-05" izz="0.000608313"/>
+    </inertial>
+    <!-- Part servo_holder_3_right -->
+    <visual>
+      <origin xyz="0.0104609 0.00943185 0.270604" rpy="-0.0695773 0.0773707 -2.98693e-18"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_3_right.stl"/>
+      </geometry>
+      <material name="servo_holder_3_right_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0104609 0.00943185 0.270604" rpy="-0.0695773 0.0773707 -2.98693e-18"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_3_right.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_shield_right -->
+    <visual>
+      <origin xyz="0.0104609 0.00943185 0.270604" rpy="-0.0695773 0.0773707 -1.14342e-16"/>
+      <geometry>
+        <mesh filename="package://assets/servo_shield_right.stl"/>
+      </geometry>
+      <material name="servo_shield_right_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0104609 0.00943185 0.270604" rpy="-0.0695773 0.0773707 -1.14342e-16"/>
+      <geometry>
+        <mesh filename="package://assets/servo_shield_right.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant4_9 -->
+    <visual>
+      <origin xyz="0.0732923 0.000197454 0.0178756" rpy="-0.0347365 -2.24164e-17 0.00269405"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+      <material name="composant4_9_material">
+        <color rgba="0.952941 0.796078 0.486275 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732923 0.000197454 0.0178756" rpy="-0.0347365 -2.24164e-17 0.00269405"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1_9 -->
+    <visual>
+      <origin xyz="0.0732923 0.000197454 0.0178756" rpy="-0.0347365 -2.24164e-17 0.00269405"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+      <material name="vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1_9_material">
+        <color rgba="0.796078 0.796078 0.796078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732923 0.000197454 0.0178756" rpy="-0.0347365 -2.24164e-17 0.00269405"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_9 -->
+    <visual>
+      <origin xyz="0.0732923 0.000197454 0.0178756" rpy="-0.0347365 -2.24164e-17 0.00269405"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+      <material name="vis_9_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732923 0.000197454 0.0178756" rpy="-0.0347365 -2.24164e-17 0.00269405"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant3_9 -->
+    <visual>
+      <origin xyz="0.0732923 0.000197454 0.0178756" rpy="-0.0347365 -2.24164e-17 0.00269405"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+      <material name="composant3_9_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732923 0.000197454 0.0178756" rpy="-0.0347365 -2.24164e-17 0.00269405"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_1_9 -->
+    <visual>
+      <origin xyz="0.0732923 0.000197454 0.0178756" rpy="-0.0347365 -2.24164e-17 0.00269405"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+      <material name="vis_1_9_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732923 0.000197454 0.0178756" rpy="-0.0347365 -2.24164e-17 0.00269405"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant2_9 -->
+    <visual>
+      <origin xyz="0.0732923 0.000197454 0.0178756" rpy="-0.0347365 -2.24164e-17 0.00269405"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+      <material name="composant2_9_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732923 0.000197454 0.0178756" rpy="-0.0347365 -2.24164e-17 0.00269405"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_motor_sts3215_v10_9 -->
+    <visual>
+      <origin xyz="0.0732923 0.000197454 0.0178756" rpy="-0.0347365 -2.24164e-17 0.00269405"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+      <material name="servo_motor_sts3215_v10_9_material">
+        <color rgba="0.247059 0.247059 0.247059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732923 0.000197454 0.0178756" rpy="-0.0347365 -2.24164e-17 0.00269405"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link servo_holder_4_2 -->
+  <link name="servo_holder_4_2">
+    <inertial>
+      <origin xyz="0.0568324 1.23844e-08 0.0179583" rpy="0 0 0"/>
+      <mass value="0.0685705"/>
+      <inertia ixx="1.76251e-05" ixy="-1.73396e-11" ixz="3.72672e-07" iyy="5.60759e-05" iyz="-1.06476e-11" izz="4.51319e-05"/>
+    </inertial>
+    <!-- Part servo_holder_4_2 -->
+    <visual>
+      <origin xyz="-2.77556e-17 0 0.0364" rpy="2.25642e-18 1.16924e-20 4.86917e-20"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_4.stl"/>
+      </geometry>
+      <material name="servo_holder_4_2_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-2.77556e-17 0 0.0364" rpy="2.25642e-18 1.16924e-20 4.86917e-20"/>
+      <geometry>
+        <mesh filename="package://assets/servo_holder_4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant4_10 -->
+    <visual>
+      <origin xyz="0.0732925 -2.77556e-17 0.0185244" rpy="-3.14159 -1.05775e-16 4.72905e-17"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+      <material name="composant4_10_material">
+        <color rgba="0.952941 0.796078 0.486275 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 -2.77556e-17 0.0185244" rpy="-3.14159 -1.05775e-16 4.72905e-17"/>
+      <geometry>
+        <mesh filename="package://assets/composant4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1_10 -->
+    <visual>
+      <origin xyz="0.0732925 -2.77556e-17 0.0185244" rpy="-3.14159 -1.05775e-16 4.72905e-17"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+      <material name="vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1_10_material">
+        <color rgba="0.796078 0.796078 0.796078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 -2.77556e-17 0.0185244" rpy="-3.14159 -1.05775e-16 4.72905e-17"/>
+      <geometry>
+        <mesh filename="package://assets/vis_à_tête_tronconique_jis_b_1111___m3_x_4___h_acier_inoxydable_a2_standard_v1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_10 -->
+    <visual>
+      <origin xyz="0.0732925 -2.77556e-17 0.0185244" rpy="-3.14159 -1.05775e-16 4.72905e-17"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+      <material name="vis_10_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 -2.77556e-17 0.0185244" rpy="-3.14159 -1.05775e-16 4.72905e-17"/>
+      <geometry>
+        <mesh filename="package://assets/vis.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant3_10 -->
+    <visual>
+      <origin xyz="0.0732925 -2.77556e-17 0.0185244" rpy="-3.14159 -1.05775e-16 4.72905e-17"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+      <material name="composant3_10_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 -2.77556e-17 0.0185244" rpy="-3.14159 -1.05775e-16 4.72905e-17"/>
+      <geometry>
+        <mesh filename="package://assets/composant3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part vis_1_10 -->
+    <visual>
+      <origin xyz="0.0732925 -2.77556e-17 0.0185244" rpy="-3.14159 -1.05775e-16 4.72905e-17"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+      <material name="vis_1_10_material">
+        <color rgba="0.0980392 0.0980392 0.0980392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 -2.77556e-17 0.0185244" rpy="-3.14159 -1.05775e-16 4.72905e-17"/>
+      <geometry>
+        <mesh filename="package://assets/vis_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composant2_10 -->
+    <visual>
+      <origin xyz="0.0732925 -2.77556e-17 0.0185244" rpy="-3.14159 -1.05775e-16 4.72905e-17"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+      <material name="composant2_10_material">
+        <color rgba="0.960784 0.960784 0.964706 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 -2.77556e-17 0.0185244" rpy="-3.14159 -1.05775e-16 4.72905e-17"/>
+      <geometry>
+        <mesh filename="package://assets/composant2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_motor_sts3215_v10_10 -->
+    <visual>
+      <origin xyz="0.0732925 -2.77556e-17 0.0185244" rpy="-3.14159 -1.05775e-16 4.72905e-17"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+      <material name="servo_motor_sts3215_v10_10_material">
+        <color rgba="0.247059 0.247059 0.247059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0732925 -2.77556e-17 0.0185244" rpy="-3.14159 -1.05775e-16 4.72905e-17"/>
+      <geometry>
+        <mesh filename="package://assets/servo_motor_sts3215_v10.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link cushion_right -->
+  <link name="cushion_right">
+    <inertial>
+      <origin xyz="-0.0194706 -0.0420367 0.0158895" rpy="0 0 0"/>
+      <mass value="0.191143"/>
+      <inertia ixx="6.61931e-05" ixy="-3.74292e-06" ixz="-1.39333e-06" iyy="0.000224241" iyz="9.58456e-06" izz="0.00023826"/>
+    </inertial>
+    <!-- Part cushion_right -->
+    <visual>
+      <origin xyz="-5.55112e-17 -0.0516163 0.132131" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/cushion_right.stl"/>
+      </geometry>
+      <material name="cushion_right_material">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.55112e-17 -0.0516163 0.132131" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/cushion_right.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part foot_right -->
+    <visual>
+      <origin xyz="-2.77556e-17 -0.0516163 0.132131" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/foot_right.stl"/>
+      </geometry>
+      <material name="foot_right_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-2.77556e-17 -0.0516163 0.132131" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/foot_right.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from servo_holder_4_2 to cushion_right -->
+  <joint name="joint_5_right" type="revolute">
+    <origin xyz="0.0857925 -5.55112e-17 -0.0001756" rpy="-2.82877e-16 -1.70324e-16 1.5708"/>
+    <parent link="servo_holder_4_2"/>
+    <child link="cushion_right"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.5708" upper="1.22173"/>
+  </joint>
+  <!-- Joint from servo_holder_3_right to servo_holder_4_2 -->
+  <joint name="joint_4_right" type="revolute">
+    <origin xyz="0.0857939 -0.000383581 0.000186281" rpy="-0.0347365 -2.58859e-17 0.00269405"/>
+    <parent link="servo_holder_3_right"/>
+    <child link="servo_holder_4_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.13446" upper="0.558505"/>
+  </joint>
+  <!-- Joint from servo_holder_2_right to servo_holder_3_right -->
+  <joint name="joint_3_right" type="revolute">
+    <origin xyz="-0.0866457 -6.93889e-17 -0.0110006" rpy="-1.5708 -1.673e-16 -1.5708"/>
+    <parent link="servo_holder_2_right"/>
+    <child link="servo_holder_3_right"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.14159" upper="0.349066"/>
+  </joint>
+  <!-- Joint from servo_holder_1_2 to servo_holder_2_right -->
+  <joint name="joint_2_right" type="revolute">
+    <origin xyz="-0.0187 0 -0.0432" rpy="1.5708 -6.16298e-33 1.5708"/>
+    <parent link="servo_holder_1_2"/>
+    <child link="servo_holder_2_right"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.698132" upper="0.785398"/>
+  </joint>
+  <!-- Joint from front_panel to servo_holder_1_2 -->
+  <joint name="joint_1_right" type="revolute">
+    <origin xyz="-0.0505 0.0969262 -0.0255029" rpy="3.02761e-17 -1.58527e-19 -1.5708"/>
+    <parent link="front_panel"/>
+    <child link="servo_holder_1_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.349066" upper="0.349066"/>
+  </joint>
+</robot>

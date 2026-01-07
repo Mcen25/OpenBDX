@@ -1,0 +1,13 @@
+{
+    "configuration": "default",
+    "documentId": "d45957d307d6fbeba266d572",
+    "documentMicroversion": "a2ae5d9f3c879b8665c4b1fb",
+    "elementId": "3cd7e830c1114565afd6f85e",
+    "fullConfiguration": "default",
+    "id": "MzA9SYrG1HUoA9qh7",
+    "isStandardContent": false,
+    "name": "IntelRealsense_D435_Multibody <1>",
+    "partId": "JFj",
+    "suppressed": false,
+    "type": "Part"
+}
