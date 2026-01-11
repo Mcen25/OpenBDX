@@ -1,0 +1,104 @@
+--- git status ---
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   .gitignore
+	new file:   legged_gym
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   source/BDX/BDX/__init__.py
+	modified:   source/BDX/BDX/tasks/manager_based/__init__.py
+	modified:   source/BDX/BDX/tasks/manager_based/bdx/__init__.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	README_BDX_STANDING.md
+	scripts/play_bdx_standing.py
+	scripts/train_bdx_standing.py
+	source/BDX/BDX/agents/
+	source/BDX/BDX/flat_env_cfg.py
+	source/BDX/BDX/tasks/manager_based/bdx/agents/bdx_standing_ppo_cfg.py
+	source/BDX/BDX/tasks/manager_based/bdx/bdx_robot_cfg.py
+	source/BDX/BDX/tasks/manager_based/bdx/bdx_standing_env_cfg.py
+	source/BDX/g1/
+	source/BDX/h1/
+ 
+
+
+--- git diff ---
+diff --git a/.gitignore b/.gitignore
+index b6c57b6..68ab2da 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -9,7 +9,6 @@
+ **/.thumbs
+ 
+ # No USD files allowed in the repo
+-**/*.usd
+ **/*.usda
+ **/*.usdc
+ **/*.usdz
+diff --git a/legged_gym b/legged_gym
+new file mode 160000
+index 0000000..8fa29ac
+--- /dev/null
++++ b/legged_gym
+@@ -0,0 +1 @@
++Subproject commit 8fa29acc6fd1910c3d9659eef6310bdd301cde0a
+diff --git a/source/BDX/BDX/__init__.py b/source/BDX/BDX/__init__.py
+index 6705ede..8a90a7e 100644
+--- a/source/BDX/BDX/__init__.py
++++ b/source/BDX/BDX/__init__.py
+@@ -11,4 +11,4 @@ Python module serving as a project/extension template.
+ from .tasks import *
+ 
+ # Register UI extensions.
+-from .ui_extension_example import *
++from .ui_extension_example import *
+\ No newline at end of file
+diff --git a/source/BDX/BDX/tasks/manager_based/__init__.py b/source/BDX/BDX/tasks/manager_based/__init__.py
+index 65d6e5a..0b75e36 100644
+--- a/source/BDX/BDX/tasks/manager_based/__init__.py
++++ b/source/BDX/BDX/tasks/manager_based/__init__.py
+@@ -4,3 +4,6 @@
+ # SPDX-License-Identifier: BSD-3-Clause
+ 
+ import gymnasium as gym  # noqa: F401
++
++# Import BDX tasks
++from . import bdx  # noqa: F401
+diff --git a/source/BDX/BDX/tasks/manager_based/bdx/__init__.py b/source/BDX/BDX/tasks/manager_based/bdx/__init__.py
+index bc78816..fb463ad 100644
+--- a/source/BDX/BDX/tasks/manager_based/bdx/__init__.py
++++ b/source/BDX/BDX/tasks/manager_based/bdx/__init__.py
+@@ -11,7 +11,28 @@ from . import agents
+ # Register Gym environments.
+ ##
+ 
++# BDX Standing Task
++gym.register(
++    id="Isaac-Standing-BDX-v0",
++    entry_point="isaaclab.envs:ManagerBasedRLEnv",
++    disable_env_checker=True,
++    kwargs={
++        "env_cfg_entry_point": f"{__name__}.bdx_standing_env_cfg:BDXStandingEnvCfg",
++        "rsl_rl_cfg_entry_point": f"{agents.__name__}.bdx_standing_ppo_cfg:BDXStandingPPORunnerCfg",
++    },
++)
++
++gym.register(
++    id="Isaac-Standing-BDX-Play-v0",
++    entry_point="isaaclab.envs:ManagerBasedRLEnv",
++    disable_env_checker=True,
++    kwargs={
++        "env_cfg_entry_point": f"{__name__}.bdx_standing_env_cfg:BDXStandingEnvCfg_PLAY",
++        "rsl_rl_cfg_entry_point": f"{agents.__name__}.bdx_standing_ppo_cfg:BDXStandingPPORunnerCfg",
++    },
++)
+ 
++# Original Template (Cartpole example)
+ gym.register(
+     id="Template-Bdx-v0",
+     entry_point="isaaclab.envs:ManagerBasedRLEnv",
