@@ -987,12 +987,6 @@
         <color rgba="0.917647 0.917647 0.917647 1"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0.0516163 0.0390687" rpy="1.5708 1.5708 0"/>
-      <geometry>
-        <mesh filename="package://assets/foot_left.stl"/>
-      </geometry>
-    </collision>
     <!-- Part cushion_left -->
     <visual>
       <origin xyz="0 0.0516163 0.0390687" rpy="1.5708 1.5708 0"/>
@@ -1648,12 +1642,6 @@
         <color rgba="0.917647 0.917647 0.917647 1"/>
       </material>
     </visual>
-    <collision>
-      <origin xyz="-2.77556e-17 -0.0516163 0.132131" rpy="-1.5708 -1.5708 0"/>
-      <geometry>
-        <mesh filename="package://assets/foot_right.stl"/>
-      </geometry>
-    </collision>
   </link>
   <!-- Joint from servo_holder_4_2 to cushion_right -->
   <joint name="joint_5_right" type="revolute">
