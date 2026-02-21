@@ -82,6 +82,9 @@ def main():
     print(f"[INFO] Loading model checkpoint from: {checkpoint_path}")
     runner.load(checkpoint_path)
 
+    # Get the trained policy for inference
+    policy = runner.get_inference_policy(device=env.unwrapped.device)
+
     # Reset environment
     obs, _ = env.reset()
     
@@ -89,10 +92,10 @@ def main():
     with torch.inference_mode():
         while simulation_app.is_running():
             # Get actions from policy
-            actions = runner.get_inference_actions(obs)
+            actions = policy(obs)
             
             # Apply actions
-            obs, _, _, _, _ = env.step(actions)
+            obs, _, _, _ = env.step(actions)
 
     # Close the environment
     env.close()
